@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;700&display=swap');
+
+*{
+    font-family: 'Kumbh Sans' , sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* body{
+    height: 100vh;
+    overflow-y: none;
+} */
+#navbar{
+    display: flex;
+    width: 100vl;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 1px black;
+    justify-content: space-around;
+    padding-top:10px ;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav ul li{
+    padding: 0 10px 0 10px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:  hsl(219, 9%, 45%);
+    position: relative;
+}
+
+.notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.link::after{
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: hsl(26, 100%, 55%);
+    transition: 0.4s;
+}
+
+.link:hover::after{
+    width: 60%;
+    
+}
+
+.cart-avatar{
+    word-spacing: 30px;
+}
+.cart-avatar .avatar{
+    width: 30px;
+    height: 30px;
+}
+
+.cart , .avatar{
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+.cart-clicked{
+position: absolute;
+width: 300px;
+height: 180px;
+box-shadow: 0px 0px 20px grey;
+border-radius: 10px;
+top: 50px;
+right: 50px;
+background:#fff;
+display: none;
+}
+
+.cart-clicked .cart-title{
+    padding: 15px 5px 10px 20px;
+    font-weight:bold ;
+}
+
+.cart-clicked .cart-content{
+    text-align: center;
+    padding: 15%;
+    color: gray;
+}
+
+.cart-value{
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    box-shadow: 0px 0px 20px grey;
+    top: 50px;
+    right: 50px;
+    background:#fff;
+    border-radius: 10px;
+     display: none; 
+    }
+
+    .cart-value .cart-value-title{
+        padding: 15px 5px 10px 20px;
+        font-weight:bold ;
+    }
+
+   
+img.cart-value-image{
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 30%;
+    float: left;
+} 
+
+.cart-description{
+    padding: 20px 10px 2px 20px;
+    font: weight 2px;
+    font-size:small;
+    color:gray;
+}
+
+.cart-value span{
+    font: weight 2px;
+    font-size:small;
+    color:gray;
+    padding-bottom: 5px;
+}
+
+.checkout{
+    margin-left: 20px;
+    height: 20%;
+}
+
+  
+  .dot {
+    background-color:  hsl(26, 100%, 55%);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 12px;
+    right: 185px;
+    cursor:default;
+    display: none;
+    z-index: 5;
+  }
+
+  .cartnum{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 1.7px;
+    align-items:stretch;
+    font-weight: 700;
+    font-size: 0.6em;
+    color: #fff;
+  }
+
+/* body */
+#body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
+    margin: 5%;
+}
+.main-shoe{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.sub-pics{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-pics img{
+    width:80px ;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+.sub-pics img:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    opacity: 0.5;
+    
+}
+
+.product-description{
+    padding-left:100px;
+}
+.company{
+    color:hsl(26, 100%, 55%);
+    padding-top: 10px;
+    line-height: 3;
+}
+
+.title{
+    word-wrap:break-word;
+     width: 300px;
+    font-size: 700;
+
+}
+
+.description{
+     word-wrap:break-word;
+     width: 450px; 
+     line-height: 1.5;
+}
+.price{
+    display: inline;
+    font-weight: 700;
+    padding-top: 20px;
+    word-spacing: 5px;
+}
+.discount{
+    display: inline;
+    color: hsl(26, 100%, 55%);
+    border: 1px solid hsl(25, 100%, 94%);
+    padding: 2px;
+    line-height: 1.5;
+}
+
+.old-price{
+     font-weight:400;
+     color: hsl(219, 9%, 45%);
+     text-decoration: line-through;
+}
+
+.add-to-cart{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    
+}
+
+.move-to-cart{
+    background-color: hsl(26, 100%, 55%);
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+   box-shadow: none;
+   border: none;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+.btn {
+    padding: 7px;
+    margin: 10px;
+    height: 30px; 
+    box-sizing: content-box;
+    align-items: center;
+    border: none;
+    
+}
+
+.btn1{
+    background-color:hsl(26, 100%, 55%);
+    border-radius: 5px;
+    width: 200px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    box-shadow: none;
+}
+
+.btn1.cart-img{
+    /* font-size: 5em; */
+    height: 2px;
+    width:2px ;
+    
+}
+
+.bg-model{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: .3s;
+     display: none;  
+}
+
+.picture-clicked{
+    display: inline;
+    justify-content: center;
+    align-content: center;
+    /* transform: translate(-50% , -50%); */
+  
+
+}
+
+
+.main-shoe-clicked{
+    
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    /* margin-top: 10%; */
+ }
+.sub-pics-clicked{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}  
+
+.sub-pics-clicked img{
+    width:80px ;
+    height: 80px;
+    border-radius: 10px;
+     margin-top: 20px; 
+    transition: 0.4s ease-in-out;
+    
+    
+} 
+
+.all{
+    position: absolute;
+    display: inline-block; 
+    transform: translate(100% , 10%); 
+    
+    
+} 
+
+
+.sub-pics-clicked img:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    opacity: 0.5;
+    
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 48%;
+    transform: rotate(45deg);
+    font-size: 2em;
+    color: hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.cart-clicked.none, .cart-value.none{
+    display: block;
+}
+
+@media (max-width:375px) {
+    body{
+        background-color: blue;
+    }
+}
